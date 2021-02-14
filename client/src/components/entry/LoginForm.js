@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import SocialSignUp from './SocialSignUp';
 import { AuthContext } from '../../context/AuthContext';
 import AuthService from '../../service/AuthService';
 
@@ -58,10 +57,6 @@ export default function LoginForm() {
           : null}
         <button type="submit" value="Login" data-testid="login-btn" className="form__submit-btn">Login</button>
       </form>
-      <div className="login__alt">
-        <p className="login__alt-text">Or log in with</p>
-        <SocialSignUp />
-      </div>
     </div>
   );
 }

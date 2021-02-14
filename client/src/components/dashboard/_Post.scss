@@ -7,32 +7,29 @@
         background-size: cover;
         display: flex;
         border: 1px solid #e67e22;
-        box-shadow: 0 0 10px #e67e22;
+        box-shadow: 0 0 30px #e67e22;
         border-radius: 15px;
-        height: 350px;
-        width: 300px;
+        height: 250px;
+        width: 350px;
         margin: 10px;
+        cursor: pointer;
     }
-    &__name,
-    &__author {
+    &__name{
         color: white;
         margin: 0;
         padding: 10px 0;
     }
     &__name {
         text-transform: capitalize;
-    }
-    &__author {
-        margin-top: 150px;
+        font-size: 1rem;
+        height: 50%;;
     }
     &__description {
-        width: 100%;
-        text-align: center;
+        width: 75%;
+        height: 100%;
+        text-align: left;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 5%;
-
     }
 }

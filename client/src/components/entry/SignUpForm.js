@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import SocialSignUp from './SocialSignUp';
 import AuthService from '../../service/AuthService';
 
 export default function SignUpForm() {
@@ -111,10 +110,6 @@ export default function SignUpForm() {
           : null}
         <input type="submit" value="Sign Up" className="form__submit-btn" data-testid="sign-up-btn" />
       </form>
-      <div className="sign-up__submits">
-        <p className="sign-up__alt-text">Or sign up with</p>
-        <SocialSignUp />
-      </div>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
 .home-details {
     display: flex;
     flex-direction: column;
@@ -6,21 +8,69 @@
     width: 80%;
     &__header {
         margin: 70px 0 0 0;
-        color: white;
         font-weight: 100;
-        font-family: 'Arial';
         box-sizing: border-box;
         padding: 2%;
-        font-size: 40px;
         width: 80%;
-        font-size: 70px;
     }
     &__header-description {
         margin: 0;
-        color: white;
         padding: 2%;
         font-weight: 100;
-        font-family: 'Arial';
-        font-size: 30px;
+    }
+}
+
+.neon-red-text {
+    font-size: 4rem;
+    font-family: "Sacramento", cursive;
+    animation: blink-red 12s infinite;
+    width: 100%;
+}
+
+.neon-orange-text {
+    font-family: "neon";
+    font-size: 7rem;
+    animation: blink-orange 12s infinite;
+}
+
+@keyframes blink-orange {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 
+            0 0 5px #e67e22, 0 0 15px #e67e22, 0 0 20px #e67e22, 0 0 40px #e67e22, 
+            0 0 60px #ff0000, 0 0 10px #e67e22, 0 0 98px #ff0000;
+        color: #fff6a9
+    }
+}
+
+@keyframes blink-red {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #f25757, 0 0 15px #f25757, 0 0 20px #f25757, 0 0 40px #e50b0b, 0 0 60px #e50b0b, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #ffd8d8;
     }
 }

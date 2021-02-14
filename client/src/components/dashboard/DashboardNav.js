@@ -5,7 +5,7 @@ import AuthService from '../../service/AuthService';
 import { AuthContext } from '../../context/AuthContext';
 
 export default function DashboardNav() {
-  const { setIsAuthenticated, setUser } = useContext(AuthContext);
+  const { isAuthenticated, setIsAuthenticated, setUser } = useContext(AuthContext);
   const history = useHistory();
 
   const logoutHandler = () => {
@@ -24,12 +24,14 @@ export default function DashboardNav() {
         <button type="button" className="dashboard__home">GLOBAL</button>
       </Link>
       <Link to="/dashboard/my-posts">
-        <button type="button" className="dashboard__my-posts">MYPOSTS</button>
+        <button type="button" className="dashboard__my-posts">MY POSTS</button>
       </Link>
       <Link to="/dashboard/create">
         <button type="button" className="dashboard__create">CREATE</button>
       </Link>
-      <button type="button" className="dashboard__log-out" onClick={logoutHandler}>LOGOUT</button>
+      {isAuthenticated
+        ? <button type="button" className="dashboard__log-out" onClick={logoutHandler}>LOGOUT</button>
+        : null}
     </nav>
   );
 }

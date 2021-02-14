@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Proptypes from 'prop-types';
 import RecipeModal from '../recipe-modal/RecipeModal';
 
-export default function Post(props) {
+export default function Post({ recipe }) {
   const [isPopUp, setPopUp] = useState(false);
-  const { recipe } = props;
 
   const togglePopUp = () => {
     setPopUp(!isPopUp);
@@ -13,7 +12,6 @@ export default function Post(props) {
   const postImage = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(${recipe.img})`,
   };
-
   return (
     <>
       <div className="post" data-testid="post-container" onClick={togglePopUp} onKeyDown={togglePopUp} role="button" tabIndex={0}>
@@ -22,11 +20,6 @@ export default function Post(props) {
             <h1 className="post__name" data-testid="recipe-title">
               {recipe.title}
             </h1>
-            <h3 className="post__author" data-testid="recipe-author">
-              By
-              <br />
-              {recipe.author}
-            </h3>
           </div>
         </div>
       </div>

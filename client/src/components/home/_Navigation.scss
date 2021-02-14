@@ -3,9 +3,12 @@
     flex-direction: column;
     z-index: 1;
     margin-top: 40px;
-    &__register, &__login, &__about-me {
+    &__register, &__login, &__about-me, &__code-snippets, &__recipes {
         color: white;
         font-size: 20px;
+        cursor: pointer;
+    }
+    &__link {
         margin-bottom: 50px;
     }
     &__exit-icon {
@@ -16,5 +19,6 @@
         border: none;
         background: none;
         height: 32px;
+        cursor: pointer;
     }
 }

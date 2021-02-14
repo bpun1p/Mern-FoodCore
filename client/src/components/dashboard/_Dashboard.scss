@@ -3,10 +3,19 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../assets/images/profile-back.jpg);
     min-height: 100vh;
     background-attachment: fixed;
+    &__unauthenticated-msg {
+        color: #ffffff;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
 }
 
 .created-posts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 150px;
 }

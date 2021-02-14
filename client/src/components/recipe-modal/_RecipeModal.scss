@@ -12,10 +12,11 @@
         align-items: center;
         background-color: rgba($color: #13182c, $alpha: 0.7);
         height: 100vh;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         z-index: 1;
+        background-size: cover;
     }
     &__recipe {
         display: flex;
@@ -46,8 +47,6 @@
         display: flex;
         justify-content: center;
         background-color: black;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
         position: relative;
     }
     &__exit {
