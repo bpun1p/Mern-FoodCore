@@ -1,12 +1,11 @@
 @import "./about-me/AboutMe";
 @import "./create-recipe/AddContent";
-@import "./create-recipe/Create";
 @import "./create-recipe/CreateForm";
 
 @import "./dashboard/Dashboard";
 @import "./dashboard/DashboardHeader";
 @import "./dashboard/DashboardNav";
-@import "./dashboard/Posts";
+@import "./dashboard/Post";
 
 @import "./entry/Entry";
 @import "./entry/EntryDetails";
@@ -20,3 +19,4 @@
 @import "./home/Navigation";
 
 @import "./recipe-modal/RecipeModal";
+@import "./code_snippets/CodeSnippet";
